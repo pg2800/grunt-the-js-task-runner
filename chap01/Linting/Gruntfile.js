@@ -22,4 +22,8 @@ module.exports = function(grunt) {
 };
 
 //src/foo.js
-if(7 == "7") alert(42); 
+// Wrong according to our configuration object:
+// if(7 == "7") alert(42);
+if(7 === "7") {
+  alert(42); 
+}
