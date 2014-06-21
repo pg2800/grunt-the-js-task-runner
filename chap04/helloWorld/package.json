@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "build": "node_modules/build.js",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

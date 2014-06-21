@@ -1,0 +1,16 @@
+{
+  "name": "heapSort"
+  ,"version": "0.0.0"
+  ,"description": "Algorithm for practice in TekMexico"
+  ,"main": "package.json"
+  ,"scripts": {
+    "test": "test"
+  }
+  ,"author": "'Pablo"
+  ,"license": "ISC"
+  ,"devDependencies": {
+    "grunt": "^0.4.5"
+    ,"grunt-contrib-jasmine": "^0.6.5"
+    ,"grunt-contrib-watch": "^0.6.1"
+  }
+}
