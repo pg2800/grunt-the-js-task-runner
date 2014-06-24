@@ -1,5 +1,5 @@
 module.exports = function(grunt){
-	// grunt.loadTasks(['./test']);
+	// grunt.loadTasks(['./test.js']);
 
 	grunt.registerTask('build', ['test']);
 };
