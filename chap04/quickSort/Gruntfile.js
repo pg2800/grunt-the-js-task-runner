@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 			all: {
 				src: 'src/**/*.js'
 				,options: {
-					specs: ['spec/**/*.spec.js', '!spec/**/task/**']
+					specs: ['spec/**/*.spec.js']
 					,keepRunner: true
 				}
 			}
