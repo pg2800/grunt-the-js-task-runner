@@ -1,9 +1,16 @@
 module.exports = function(grunt) {
+	grunt.loadTasks('./build/tasks');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+
 	grunt.initConfig({
 		watch: {
 			all: {
-				options: { event: 'all' }
-				,files: ['src/**/*.js', '!**/node_modules/**']
+				options: { 
+					event: 'all'
+					,debounceDelay: 0/*ms*/
+					,livereload: false
+				}
+				,files: ['src/**/*.js', 'spec/**/*.js', 'Gruntfile.js', '!**/node_modules/**']
 				,tasks: ['build']
 			}
 		}
@@ -18,7 +25,5 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadTasks(['./node_modules/tasks']);
-	grunt.loadNpmTasks(['grunt-contrib-watch']);
 	grunt.registerTask('default', ['watch']);
 };
