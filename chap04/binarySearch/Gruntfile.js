@@ -3,7 +3,7 @@ module.exports = function (grunt){
 		watch: {
 			all: {
 				options: { event: 'all' }
-				,files: ['src/**/*.js', 'specs/**/*.js', 'Gruntfile.js', '!**/node_modules/**']
+				,files: ['src/**/*.js', 'build/**/*.js', 'specs/**/*.js', 'Gruntfile.js', '!**/node_modules/**']
 				,tasks: ['build']
 			}
 		}
@@ -18,7 +18,7 @@ module.exports = function (grunt){
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-jasmine');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadTasks('./build/tasks');
 	grunt.registerTask('default', ['watch']);
 };
